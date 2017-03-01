@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+</head>
+<body>
+	<h1>NYC Restaurant Search-a-ma-bob</h1>
+	<div class="container">
+      <div class="row header">
+        <img class="col-md-6 col-md-offset-3" src="http://barfblog.com/wp-content/uploads/2013/05/nyc.rest_.grades.jpeg" id="logo">
+        <section class="col-md-6 col-md-offset-3" >
+          <h3>Search Restaurants</h3>
+          <form class="form-horizontal" action="/restaurants">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search-field" placeholder="Search Term" name="dba">
+            </div>
+            <div class="form-group">
+              <select id="grade" name="grade" class="form-control">
+                <option value=""></option>
+                <option value="N">N = Not Yet Graded</option>
+                <option value="A">A = Grade A</option>
+                <option value="B">B = Grade B</option>
+                <option value="C">C = Grade C</option>
+                <option value="Z">Z = Grade Pending</option>
+                <option value="P">P = Grade Pending / closure</option>
+              </select>
+            </div>
+            <div class="form-group">
+            <button id="search-button" class="btn btn-success">Search</button>
+          </div>
+          </form>
+
+        </section>
+      </div>
+      <hr>
+      <!-- SEARCH RESULTS -->
+      <section class="row search-results-panel ">
+        <div class="col-md-3" id="solo-pokemon"></div>
+        <div class="col-md-9 panel" id="results-container"></div>
+      </section>
+
+    </div>	 	
+</body>
+</html>
